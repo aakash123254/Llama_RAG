@@ -51,8 +51,8 @@ Streamlit is used to create an interactive web interface, making it easy for use
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/rag-llama-streamlit.git
-   cd rag-llama-streamlit
+   git clone https://github.com/aakash123254/Llama_RAG.git
+   cd LLAMA
    ```
 
 2. Create a virtual environment and install dependencies:
@@ -87,12 +87,9 @@ View the results and continue interacting as needed
     rag-llama-streamlit/
 ├── app.py                # Streamlit application entry point
 ├── requirements.txt      # List of Python dependencies
-├── models/               # Directory for Llama model weights
-├── data/                 # Directory for knowledge base or dataset
-├── utils/                # Utility functions for RAG pipeline
-│   ├── retriever.py      # Module for document retrieval
-│   ├── generator.py      # Module for text generation using Llama
-│   └── preprocess.py     # Data preprocessing utilities
+├── chatbot.py            # Directory for Llama model weights
+├── vectors.py                 # Directory for knowledge base or dataset
+├── logo.png
 └── README.md             # Project documentation
 
 ```
@@ -128,5 +125,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 🤝 Open-Source Community – For inspiration, tools, and continued support
 
 For any questions or feedback, feel free to open an issue or contact the project maintainer.
+Developer - Aakash Harwani
+email: aakashharwani06@gmail.com
 
 Happy coding! 🚀
