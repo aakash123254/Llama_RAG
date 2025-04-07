@@ -16,7 +16,10 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Large binary/model/data files
+# Logs
+*.log
+
+# Large binaries & models
 *.dll
 *.pyd
 *.lib
@@ -27,7 +30,3 @@ Thumbs.db
 *.ckpt
 *.mp4
 *.mkv
-
-# Logs
-*.log
-venv/
