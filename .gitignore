@@ -1,0 +1,32 @@
+# Ignore virtual environments
+venv/
+.env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large binary/model/data files
+*.dll
+*.pyd
+*.lib
+*.bin
+*.exe
+*.pt
+*.h5
+*.ckpt
+*.mp4
+*.mkv
+
+# Logs
+*.log
