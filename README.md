@@ -53,89 +53,80 @@ Streamlit is used to create an interactive web interface, making it easy for use
    ```bash
    git clone https://github.com/your-username/rag-llama-streamlit.git
    cd rag-llama-streamlit
+   ```
 
-One-Liner Installation (Windows)
-Run the following command in your terminal to set up the project:
+2. Create a virtual environment and install dependencies:
+    ```bash
+    python -m venv venv
+    venv\Scripts\activate     # On Windows
+    # source venv/bin/activate   # On Linux or MacOS
+    pip install -r requirements.txt
+    ```
+3. Create required directories:
+    ```bash
+    mkdir models data
+    ```
+4. Download the Llama model weights and place them inside the models/ directory.
 
-git clone https://github.com/your-username/rag-llama-streamlit.git & cd rag-llama-streamlit & python -m venv venv & venv\Scripts\activate & pip install -r requirements.txt & mkdir models data & echo Download Llama weights and place them in the 'models\' directory & streamlit run app.py
+5. Run the application:
+    ```bash 
+    streamlit run app.py
+    ```
 
-One-Liner Installation (macOS/Linux)
-For macOS or Linux users:
+# Usage
+Open your browser and navigate to the URL displayed in the terminal (usually http://localhost:8501)
 
-git clone https://github.com/your-username/rag-llama-streamlit.git && cd rag-llama-streamlit && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt && mkdir models data && echo "Download Llama weights and place them in the 'models/' directory" && streamlit run app.py
+Enter your query in the input box and click Submit
 
-Usage
-Run the Application :
-After completing the installation steps, the Streamlit app will launch in your browser at http://localhost:8501.
-Interact with the RAG System :
-Enter your query in the input box.
-Click the "Submit" button.
-The system will retrieve relevant information from the knowledge base and generate a response using the Llama model.
-Explore Results :
-View the generated response along with the retrieved context.
-Use the interface to refine your query or explore further interactions.
-Customize :
-Add your dataset to the data/ directory.
-Update the knowledge base preprocessing logic in utils/preprocess.py if needed.
-Project Structure
-Here’s a deeper dive into the project structure:
+The system will retrieve relevant information from the knowledge base and generate a response using Llama
 
-rag-llama-streamlit/
-├── app.py                # Main Streamlit application entry point
-├── requirements.txt      # Python dependencies for the project
-├── models/               # Directory to store Llama model weights
-├── data/                 # Directory for your knowledge base or dataset
-├── utils/                # Utility modules for the RAG pipeline
-│   ├── retriever.py      # Handles document retrieval from the knowledge base
-│   ├── generator.py      # Manages text generation using the Llama model
-│   └── preprocess.py     # Preprocessing utilities for dataset preparation
-└── README.md             # Comprehensive documentation for the project
+View the results and continue interacting as needed
 
-Advanced Configuration
-Customizing the Knowledge Base
-Add Your Dataset :
-Place your dataset files (e.g., .txt, .csv, .json) in the data/ directory.
-Preprocess the Data :
-Modify the utils/preprocess.py script to suit your dataset format. This script is responsible for converting raw data into a format suitable for retrieval.
-Update Retrieval Logic :
-Adjust the utils/retriever.py module to implement custom retrieval strategies (e.g., TF-IDF, BM25, or embeddings-based retrieval).
-Fine-Tuning Llama
-If you wish to fine-tune the Llama model for your specific use case:
+# Project Structure
+```
+    rag-llama-streamlit/
+├── app.py                # Streamlit application entry point
+├── requirements.txt      # List of Python dependencies
+├── models/               # Directory for Llama model weights
+├── data/                 # Directory for knowledge base or dataset
+├── utils/                # Utility functions for RAG pipeline
+│   ├── retriever.py      # Module for document retrieval
+│   ├── generator.py      # Module for text generation using Llama
+│   └── preprocess.py     # Data preprocessing utilities
+└── README.md             # Project documentation
 
-Download the Llama weights and place them in the models/ directory.
-Follow the instructions in the Llama documentation to fine-tune the model.
-Update the utils/generator.py module to load your fine-tuned model.
-Contributing
-We welcome contributions from the community! Here’s how you can get involved:
+```
 
-Report Issues :
-Found a bug? Open an issue with detailed steps to reproduce.
-Have a feature request? Let us know by opening an issue.
-Submit Pull Requests :
-Fork the repository.
-Create a new branch (git checkout -b feature/YourFeatureName).
-Commit your changes (git commit -m "Add some feature").
-Push to the branch (git push origin feature/YourFeatureName).
-Open a pull request with a clear description of your changes.
-Code Standards :
-Ensure your code adheres to PEP 8 guidelines.
-Write meaningful docstrings and comments.
-Include unit tests for new features or bug fixes.
-Documentation :
-Update the README.md or other documentation files as needed.
-Provide clear explanations for any new functionality.
-License
-This project is licensed under the MIT License . See the LICENSE file for details.
+# Contributing
+We welcome contributions to improve this project! To contribute:
 
-Acknowledgments
-We would like to express our gratitude to the following:
+1. Fork the repository
 
-Llama Team : For developing and open-sourcing the powerful language model that powers this project.
-Streamlit : For providing an intuitive framework to build interactive web applications with minimal effort.
-Open-Source Community : For inspiring and supporting this project through shared knowledge and resources.
-Contact
-For any questions, feedback, or collaboration opportunities, feel free to reach out:
+2. Create a new branch:
+```bash
+    git checkout -b feature/YourFeatureName
+```
+3. Commit your changes:
+```bash
+    git commit -m "Add some feature"
+```
+4. Push to the branch:
+```bash
+    git push origin feature/YourFeatureName
+```
+5. Open a pull request
+Please ensure your code follows the project's coding standards and includes appropriate documentation.
 
-Maintainer : Your Name
-GitHub Repository : rag-llama-streamlit
-Happy coding and exploring the world of Retrieval-Augmented Generation! 🚀
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+# Acknowledgments
+🦙 Llama Team – For providing the powerful language model
+
+🌟 Streamlit – For enabling rapid development of interactive web applications
+
+🤝 Open-Source Community – For inspiration, tools, and continued support
+
+For any questions or feedback, feel free to open an issue or contact the project maintainer.
+
+Happy coding! 🚀
