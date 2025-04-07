@@ -52,3 +52,54 @@ Follow these steps to set up the project on your local machine:
    ```bash
    git clone https://github.com/your-username/rag-llama-streamlit.git
    cd rag-llama-streamlit
+
+One-Liner Installation (Windows)
+Run the following command in your terminal to set up the project:
+
+git clone https://github.com/your-username/rag-llama-streamlit.git & cd rag-llama-streamlit & python -m venv venv & venv\Scripts\activate & pip install -r requirements.txt & mkdir models data & echo Download Llama weights and place them in the 'models\' directory & streamlit run app.py
+
+Usage
+Open your browser and navigate to the URL displayed in the terminal (usually http://localhost:8501).
+Enter your query in the input box and click "Submit".
+The system will retrieve relevant information from the knowledge base and generate a response using Llama.
+View the results and interact further as needed.
+
+Project Structure
+
+rag-llama-streamlit/
+├── app.py                # Streamlit application entry point
+├── requirements.txt      # List of Python dependencies
+├── models/               # Directory for Llama model weights
+├── data/                 # Directory for knowledge base or dataset
+├── utils/                # Utility functions for RAG pipeline
+│   ├── retriever.py      # Module for document retrieval
+│   ├── generator.py      # Module for text generation using Llama
+│   └── preprocess.py     # Data preprocessing utilities
+└── README.md             # Project documentation
+
+
+Contributing
+We welcome contributions to improve this project! To contribute:
+
+Fork the repository.
+Create a new branch (git checkout -b feature/YourFeatureName).
+Commit your changes (git commit -m "Add some feature").
+Push to the branch (git push origin feature/YourFeatureName).
+Open a pull request.
+Please ensure your code follows the project's coding standards and includes appropriate documentation.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Acknowledgments
+Llama Team : For providing the powerful language model.
+Streamlit : For enabling rapid development of interactive web applications.
+Open-Source Community : For inspiration and support.
+
+Acknowledgments
+Llama Team : For providing the powerful language model.
+Streamlit : For enabling rapid development of interactive web applications.
+Open-Source Community : For inspiration and support.
+For any questions or feedback, feel free to open an issue or contact the project maintainer.
+
+Happy coding! 🚀
