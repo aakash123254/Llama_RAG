@@ -160,3 +160,10 @@ Developer - Aakash Harwani
 email: aakashharwani06@gmail.com
 
 Happy coding! 🚀
+
+---
+
+#### **If you like this LLM Project do drop ⭐ to this repo**
+#### Follow me on [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aakash-harwani-453932222?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvvPgYsNoSGm%2B2WzEDffhYA%3D%3D) &nbsp; [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aakash123254)
+
+---
